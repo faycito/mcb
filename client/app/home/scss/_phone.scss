@@ -1,0 +1,18 @@
+.b3{
+    .content{
+        max-width: 100%;
+        background-image: url('./../../assets/img/home/background-sec3.png');
+    }
+
+    h2:before{
+        content: ">>";
+        font-size: 15px;
+    }
+
+    #ctrl{
+        padding-left: 120px;
+    }
+    #exec{
+        padding-left: 240px;
+    }
+}

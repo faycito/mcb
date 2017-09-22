@@ -12,6 +12,7 @@ export class DogRoutes extends BaseRoutes {
 		super('dogs', DogController);
 	}
 
+
 }
 
 Object.seal(DogRoutes);

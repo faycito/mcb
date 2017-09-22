@@ -1,192 +1,86 @@
-.navbar.navbar-inverse.navbar-fixed-top
-	.container
-		.navbar-header
-			button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			a.logo(pageScroll, href='#header')
-				img([src]='logo', alt='Logo')
-		.navbar-collapse.collapse
-			ul.nav.navbar-nav.navbar-right
-				li
-					a(pageScroll, href='#pricing') Pricing
-				li
-					a(pageScroll, href='#header') Sign in
-		//- /.navbar-collapse
-header#header
-	.container
+header.g-header
+	nav.g-header_nav
+		ul.g-header_nav_left
+			//-Block === g-header
+			//-Element === g-header_Elemento
+			//-Modifier === g-header_Elemento_modifier
+
+			//- h1 to h6
+			//- p, strong, em, y, super, etc...
+
+			//- tittle, buttons, inputs (texto), textarea (GENEREALES O GLOBALES).
+
+
+section.slide
+
+section.b1.g-padding-top.g-padding-bottom
+	.container-fluid
+		h2.g-title OUR PROYECTS
 		.row
-			.col-xs-6
-				a.logo(pageScroll, href='#header')
-					img([src]='logo', alt='Logo')
-			.col-xs-6.signin.text-right.navbar-nav
-				a(pageScroll, href='#pricing') Pricing
-				a(pageScroll, href='#header') Sign in
-		.row.header-info
-			.col-sm-10.col-sm-offset-1.text-center
-				h1 A free landing page theme
-				br
-				p.lead
-					| Lorem ipsum dolor sit amet, consectetur adipis.
-					br
-					|             Lorem ipsum dolor sit amet, consectetur adipiscing elit sit dol mi arlna.
-				br
+			.col-md-6.col-sm-12
+				.b1-p
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint similique, culpa labore corporis possimus quod amet nulla, voluptatum voluptatem sed quae assumenda consectetur quis voluptatibus repellat praesentium, unde a! Cum!
+
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint similique, culpa labore corporis possimus quod amet nulla, voluptatum voluptatem sed quae assumenda consectetur quis voluptatibus repellat praesentium, unde a! Cum!
+			.col-md-6.col-sm-12
+				img([src]='video')
+				button.btn.btn-danger View All >
+section.b2
+	h2.g-title MORE THAN A DREAM
+	.content
+		.row
+			h3 A Unique Approach to Home Remodeling
+			p Using only quality materials, professional servixes and up to date construction methods. We can accommodate any project, from construction of a new property to the renovation of existing residential and commercial properties.
+			.container
 				.row
-					.col-md-8.col-md-offset-2.col-sm-10.col-sm-offset-1
-						.row
-							.col-xs-6.text-right
-								a.btn.btn-secondary.btn-lg(href='#be-the-first') Learn More
-							.col-xs-6.text-left
-								a.btn.btn-primary.btn-lg(href='#invite') Request Invite
-						//- // End Button Row
-
-.mouse-icon.hidden-xs
-
-
-section#be-the-first.pad-xl
-	.container
+					.mcbImg
+					.box
+						p We'll work with you from concept through construction to ensure your home is exactyle the way you imagined it.
+						button.btn.btn-default View Gallery
+section.b3
+	.content
 		.row
-			.col-sm-8.col-sm-offset-2.text-center.margin-30
-				h2 Be the first
-				p.lead Lorem ipsum dolor sit amet, consectetur adipis.
-		.iphone
-			img([src]='iphone')
-
-section#main-info.pad-xl
-	.container
-		.row
-			.col-sm-4
-				hr.line.purple
-				h3 App Feature One Here
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.
-			.col-sm-4
-				hr.line.blue
-				h3 App Feature One Here
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.
-			.col-sm-4
-				hr.line.yellow
-				h3 App Feature One Here
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut est facilisis, eu elementum mi volutpat. Pellentesque ac tristique nisi.
-
-//- Pricing
-section#pricing.pad-lg
-	.container
-		.row.margin-40
-			.col-sm-8.col-sm-offset-2.text-center
-				h2.white Pricing
-				p.white
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.
-		.row.margin-50
-			.col-sm-4.pricing-container
-				br
-				ul.list-unstyled.pricing-table.text-center
-					li.headline
-						h5.white Personal
-					li.price
-						.amount
-							| $5
-							small /m
-					li.info 2 row section for you package information. You can include all details or icons
-					li.features.first Up To 25 Projects
-					li.features 10GB Storage
-					li.features Other info
-					li.features.last.btn.btn-secondary.btn-wide
-						a(href='#') Get Started
-			.col-sm-4.pricing-container
-				ul.list-unstyled.pricing-table.active.text-center
-					li.headline
-						h5.white Professional
-					li.price
-						.amount
-							| $12
-							small /m
-					li.info 2 row section for you package information. You can include all details or icons
-					li.features.first Up To 25 Projects
-					li.features 10GB Storage
-					li.features Other info
-					li.features Other info
-					li.features.last.btn.btn-secondary.btn-wide
-						a(href='#') Get Started
-			.col-sm-4.pricing-container
-				br
-				ul.list-unstyled.pricing-table.text-center
-					li.headline
-						h5.white Business
-					li.price
-						.amount
-							| $24
-							small /m
-					li.info 2 row section for you package information. You can include all details or icons
-					li.features.first Up To 25 Projects
-					li.features 10GB Storage
-					li.features Other info
-					li.features.last.btn.btn-secondary.btn-wide
-						a(href='#') Get Started
-
-section#invite.pad-lg.light-gray-bg
-	.container
-		.row
-			.col-sm-8.col-sm-offset-2.text-center
-				i.glyphicon.glyphicon-envelope.margin-40
-				h2.black Get the invite
-				br
-				p.black
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.
-				br
+			.col-md-6
+				img([src]="phone")
+			.col-md-6
 				.row
-					.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
-						form(role='form')
-							.form-group
-								input#exampleInputEmail1.form-control(type='email', placeholder='Enter Email')
-							button.btn.btn-primary.btn-lg(type='submit') Request Invite
-				//- End Form row
-
-section#press.pad-sm
-	.container
-		.row.margin-30.news-container
-			.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
-				a(href='#', target='_blank')
-					img.news-img.pull-left([src]='press01', alt='Tech Crunch')
-					p.black
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.
-						br
-						small
-							em Tech Crunch - January 15, 2015
-		.row.margin-30.news-container
-			.col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2
-				a(href='#', target='_blank')
-					img.news-img.pull-left([src]='press02', alt='Forbes')
-					p.black
-						| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci ut.
-						br
-						small
-							em Forbes - Feb 25, 2015
-
-footer
-	.container
+					h2 Plan
+				.row
+					h2#ctrl Control
+				.row
+					h2#exec Execute
+section.b4
+	h2.g-title REALIZE YOUR VISION
+	.content
+		h3 Our Service
 		.row
-			.col-sm-8.margin-20
-				ul.list-inline.social
-					li Connect with us on
-					li
-						a(href='#')
-							i.fa.fa-twitter
-					li
-						a(href='#')
-							i.fa.fa-facebook
-					li
-						a(href='#')
-							i.fa.fa-instagram
-						a(href='#')
-							i.cs-labs.cs-labs-align-right
-			.col-sm-4.text-right
-				p
-					small
-						| Copyright © 2014. All rights reserved.
-						br
-						| 	            Created by
-						a(href='http://visualsoldiers.com') Visual Soldiers
+			.col-md-6#image
+				img([src]="ryv")
+			.col-md-6
+				.ryvctn
+					p Your home is defined by more than its physical dimension. It's an extension of you and your family and a reflection of your nique character.
+					p Modern Concept Builders, Inc prides that we can accommodate any project be it large or mdall. We are committed to producing work of the highest standard.
+					p Experienced, licenced and fully insured, we are the builders who collaborate with our clients from day one and guide the process from concept to completion.
+section.b5
+	.row
+		.form
+			form
+				h4 Get Fresh News and Promo Codes
+				input.emailpromo(type="email",  name="email", placeholder="Your email address")
+				input#btn-scb.btn.btn-danger(type="submit", name="submit", value="Suscribe")
+section.b6
+	h2.g-title Contact Us
+	.content
+		h3 Get in touch with us
+		form#contactForm
+			.row
+				.col-md-8.contact-form
+					.col-md-6
+						input(type="text", name="name", placeholder="Name")
+						input(type="email", name="email", placeholder="Email")
+						input(type="number", name="phone", placeholder="Phone")
+					.col-md-3
+						textarea(name="message", cols="30", rows="10", form="contactForm", placeholder="Your message...")
+						input(type="submit", name="submit", value="Send")
+				.col-md-3
+footer.g-footer

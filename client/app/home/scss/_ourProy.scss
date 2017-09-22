@@ -1,0 +1,30 @@
+.b1{
+
+    img{
+        max-width: 700px;
+        max-height: 800px;
+        width: 90%;
+        height: 300px;
+    }
+    button{
+        margin-top: 15px;
+    }
+    .content{
+        .row{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            .col-sm-6{
+                padding: 0px;
+                p{
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .container{
+        width: 100%;
+        padding-left: 100px;
+    }
+
+}

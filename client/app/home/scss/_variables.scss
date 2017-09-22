@@ -1,0 +1,104 @@
+/* ==========================================================================
+	 Variables
+========================================================================== */
+
+$primary :#5167A5;
+$secondary :#9749FF;
+$danger :#D0021B;
+$light :#f4f4f4;
+$dark :#000000;
+$muted :#d4d5d9;
+$dull_blue :#5167a5;
+$purple :#886AF1;
+$shadow:#777;
+
+
+/* ==========================================================================
+	 Variables Texto
+========================================================================== */
+
+$color-text: #fff;
+$color-link: #002068;
+$color-link-hover: #d8d1d1;
+$color-enter: #ecec11;
+$color-title: #ffffff;
+$color-subtitle: #002068;
+$color-menu-item: #fff;
+$color-menu-item-hover: #000;
+$color-menu-item-hover-alt: #000;
+$color-content: #013bbb;
+$color-content-fixed: #ddd;
+$color-next: #fff;
+$color-next-hover: #000;
+
+/* ==========================================================================
+	 Medidas and Fonts
+========================================================================== */
+
+$font-alt: 400 6vw/1 'Fugaz One', serif;
+$wancho: calc(1100px - 15px);
+$width:calc(94% - 15px);
+
+.container-fluid, .container{
+    width: $width;
+    margin: auto;
+	max-width: $wancho;
+}
+
+/* ==========================================================================
+	 Mixins
+========================================================================== */
+
+@mixin placeholder($color) {
+	/* WebKit */
+	 ::-webkit-input-placeholder {
+		color: $color;
+	}
+	/* Firefox 18- */
+	 :-moz-placeholder {
+		color: $color;
+	}
+	/* Firefox 19+ */
+	 ::-moz-placeholder {
+		color: $color;
+	}
+	/* IE 10+ */
+	 :-ms-input-placeholder {
+		color: $color;
+	}
+}
+
+@mixin transition-all() {
+	transition: all 0.25s;
+}
+
+
+/* ==========================================================================
+	 Extend/Inheritance
+========================================================================== */
+
+.md-message {
+	border: 1px solid #ccc;
+	padding: 10px;
+	color: #333;
+}
+
+.md-success {
+	@extend .md-message;
+	border-color: green;
+}
+
+.md-error {
+	@extend .md-message;
+	border-color: red;
+}
+
+.md-warning {
+	@extend .md-message;
+	border-color: yellow;
+}
+
+
+/* ==========================================================================
+	 Fonts
+========================================================================== */
